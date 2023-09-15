@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.accionmfb.expertbus.config.ExpertRestTemplateConfig,\
+com.accionmfb.expertbus.logger.IrisApiLogger,\
+com.accionmfb.expertbus.scheduler.IrisServerHealthCheckScheduler,\
+com.accionmfb.expertbus.service.impl.IrisConnectionTemplateImpl,\
+com.accionmfb.expertbus.ExpertbusConfig
