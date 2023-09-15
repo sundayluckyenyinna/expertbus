@@ -21,7 +21,7 @@ public class ExpertbusConfig {
     private final IrisConnectionProperties irisConnectionProperties;
 
     @Bean
-    public CommandLineRunner pinIrisServerOnStartup(){
+    public CommandLineRunner pingIrisServerOnStartup(){
         String irisHost = irisConnectionProperties.getHost();
         Integer irisPort = irisConnectionProperties.getPort();
 

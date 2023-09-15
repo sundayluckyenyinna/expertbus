@@ -14,8 +14,8 @@ import java.util.Map;
 
 @Slf4j
 @Configuration
+@EnableConfigurationProperties(value = IrisConnectionProperties.class)
 @RequiredArgsConstructor
-@EnableConfigurationProperties(IrisConnectionProperties.class)
 public class IrisApiLogger {
 
     private final IrisConnectionProperties irisConnectionProperties;

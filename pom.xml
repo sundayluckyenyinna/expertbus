@@ -15,6 +15,7 @@
     <description>expertbus</description>
     <properties>
         <java.version>11</java.version>
+        <spring-cloud.version>Hoxton.SR11</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
@@ -37,7 +38,6 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.2</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>

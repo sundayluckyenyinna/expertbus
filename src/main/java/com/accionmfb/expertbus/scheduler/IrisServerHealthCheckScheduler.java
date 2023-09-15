@@ -3,7 +3,6 @@ package com.accionmfb.expertbus.scheduler;
 import com.accionmfb.expertbus.config.IrisConnectionProperties;
 import com.accionmfb.expertbus.data.IrisConnection;
 import com.accionmfb.expertbus.manager.IrisServerManager;
-import com.accionmfb.expertbus.service.IrisConnectionTemplate;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -18,8 +17,8 @@ import java.util.Optional;
 @Slf4j
 @Configuration
 @EnableScheduling
+@EnableConfigurationProperties(value = IrisConnectionProperties.class)
 @RequiredArgsConstructor
-@EnableConfigurationProperties(IrisConnectionProperties.class)
 public class IrisServerHealthCheckScheduler {
 
     private final IrisConnectionProperties irisConnectionProperties;
